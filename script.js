@@ -113,7 +113,7 @@ function createlogsData(cwlsData, bearerToken) {
 }
 
 function generateReplaceName(Name) {
-    return Name.replace(' ', '_').replace(new RegExp('\''), '_').replace(new RegExp('-'), '_');
+    return Name.replace(' ', '_').replaceAll('\'', '_').replaceAll('-', '_');
 }
 
 function generateServerName(Server) {
