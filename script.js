@@ -12,10 +12,15 @@ const regionMap = {
 this.loadPage();
 
 function loadPage() {
-    if ($.cookie('bearer_token') != null && $.cookie('cwls_id')) {
+    if ($.cookie('bearer_token') != null) {
         document.getElementById("bearer_token").value = $.cookie('bearer_token');
+    }
+    
+    if ($.cookie('cwls_id') != null) {
         document.getElementById("cwls_id").value = $.cookie('cwls_id');
-
+    }
+    
+    if ($.cookie('bearer_token') != null && $.cookie('cwls_id') != null) {
         generatePage(document.getElementById("bearer_token").value, document.getElementById("cwls_id").value);
     }
 }
