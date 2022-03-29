@@ -139,7 +139,7 @@ function generatePerfProgressBar(char, progressBarId) {
 
         progressBars += "<div class=\"perf_content row d-flex align-items-center\">";
 
-        progressBars += "<a class=\"text-dark center-block col-2\" href=\"" + "https://ja.fflogs.com/character/id/" + char.canonicalID + "#boss=" + rankings[i].encounter.id + "\" target=\"_blank\" rel=\"noopener noreferrer\">";
+        progressBars += "<a class=\"text-dark center-block col-2\" href=\"" + "https://cn.fflogs.com/character/id/" + char.canonicalID + "#boss=" + rankings[i].encounter.id + "\" target=\"_blank\" rel=\"noopener noreferrer\">";
         progressBars += rankings[i].encounter.name
         progressBars += "</a>"
 
@@ -168,7 +168,7 @@ function generatePerfProgressBar(char, progressBarId) {
 function generateSendLogsIcon(char, sendPageId) {
     var sendPageContainer = document.getElementById(sendPageId);
     var sendPageIcons = "";
-    sendPageIcons += "<a class=\"text-dark\" href=\"" + "https://ja.fflogs.com/character/id/" + char.canonicalID + "\" target=\"_blank\" rel=\"noopener noreferrer\">";
+    sendPageIcons += "<a class=\"text-dark\" href=\"" + "https://cn.fflogs.com/character/id/" + char.canonicalID + "\" target=\"_blank\" rel=\"noopener noreferrer\">";
     sendPageIcons += "<img class=\"m-2\" style=\"width:32px\" src=\"resource/web_icon/fflogs.png\">";
     sendPageIcons += "</a>";
 
